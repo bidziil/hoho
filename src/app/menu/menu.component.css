@@ -1,0 +1,22 @@
+body .menuComp .ui-menubar {
+    border: none;
+}
+
+/************ RESPONSIVITY ************/
+body .menuComp .ui-panelmenu {
+	display: none;
+}
+body .menuComp .hamburgerMenu {
+	display: none;
+}
+@media screen and (max-width: 900px) {
+	body .menuComp .ui-menubar.mainMenu {
+		display: none;
+	}
+	body .menuComp .hamburgerMenu {
+		display: block;
+	}
+	body .menuComp .ui-panelmenu {
+		display: block;
+	}
+}

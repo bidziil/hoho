@@ -1,0 +1,502 @@
+:root {
+  --fontSize: 13px;
+}
+
+/* Defect: 1559196 */
+html {
+    overflow-y: scroll;
+}
+
+html body .ui-widget,
+html body .ui-widget .ui-dropdown-label {
+    font-size: var(--fontSize);
+}
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+.ui-widget .ui-radiobutton *, .ui-widget .ui-chkbox * {
+    box-sizing: initial;
+}
+.ui-multiselect-panel {
+    max-width: 500px;
+}
+
+body button.ui-button.ui-button-text-icon-left.slimButton span.ui-button-text {
+	padding: 0.2em 1em 0.2em 2em;
+}
+body button.ui-button.slimButton span.ui-button-text {
+	padding: 0.2em 1em;
+}
+
+.loadingImageContainer {
+    font-size: 24px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.loadingImageContainer > div {
+    position: relative;
+    left: -50%;
+}
+/*
+.loadingImage {
+    width: 150px;
+    height: 150px;
+    content: "";
+    background: url(/app/resources/images/loading01.gif);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: fixed;
+    top: 35%;
+    left: 44%;
+}
+*/
+
+.outage {
+    text-align: center;
+    padding: 6px;
+    font-size: var(--fontSize);
+    background-color: #F7685E;
+}
+
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dot 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dot 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.ui-radiobutton-icon {
+    font-size: .5em;
+    /* crosseyed operation */
+    position: relative;
+    top: -1px;
+}
+
+body .ui-button.smallmargin {
+    margin: 1px;
+}
+
+.icon-button {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    text-align: center;
+}
+.icon-button span {
+    padding: 0 !important;
+}
+.icon-button .ui-button-icon-only .ui-button-text {
+    padding: 0;
+}
+
+body .ui-overlaypanel.filled-overlay .ui-overlaypanel-content {
+    padding: 0.25em;
+}
+body .ui-overlaypanel.filled-overlay button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+
+.linkText {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ui-dialog */
+.ui-dialog-draggable .ui-dialog-titlebar {
+    cursor: move;
+}
+
+.ui-dialog {
+    opacity: 100 !important;
+}
+
+/* Helper tooltip */
+.tooltiptext {
+    max-width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 2000;
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .50s ease-in-out;
+    -moz-transition: opacity .50s ease-in-out;
+    -webkit-transition: opacity .50s ease-in-out;
+}
+.tooltiptext.tooltiptextAnimate {
+    opacity: 1;
+}
+/* Little pointer triangle */
+.tooltiptext::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-right: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltiptext.bottomPointer::before {
+    top: auto;
+    bottom: -10px;
+    border-color: black transparent transparent transparent;
+}
+/* Helps mouse to get to tooltip when its near to the element bottom */
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    z-index: 1000;
+}
+.tooltiptext.bottomPointer::after {
+    bottom: -20px;
+}
+.tooltiptext a {
+    color: antiquewhite;
+}
+
+/*
+ * SplitButton
+ * https://github.com/primefaces/primeng/issues/5034
+ */
+.ui-splitbutton {
+  vertical-align: top;
+}
+
+.ui-table .ui-table-thead > tr > th {
+  text-align: center;
+  color: #555555;
+}
+
+.ui-table .ui-table-thead > tr > th,
+.ui-table .ui-table-tfoot > tr > td,
+.ui-table .ui-table-tbody > tr {
+  border: 1px solid #d9d9d9;
+  font-weight: normal;
+}
+
+.ui-table-caption, .ui-table-summary {
+  color: #555555;
+  text-align: center;
+  font-weight: normal;
+  padding: .5em;
+}
+
+/* inplace */
+.ui-inplace-content button.ui-button {
+    width: 1.4em;
+    text-align: center;
+}
+
+.ui-inplace-content button.ui-button span {
+    padding: 0 !important;
+}
+
+/* spinner start */
+.navSpinner {
+    text-align: center;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+
+.sideLoader {
+    float: right;
+    margin-left: 10px;
+}
+
+.loading-effect-1 {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loading-effect-small {
+    width: 1.6em;
+    height: 1.6em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.loading-effect-tabloader {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.clear-loading {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.loading-effect-1 span, .loading-effect-small span, .loading-effect-tabloader span {
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loading-effect-1 span:first-child, .loading-effect-small span:first-child, .loading-effect-tabloader span:first-child {
+    width: 100%;
+    height: 100%;
+    border-color: #414d5b;
+    border-left-color: transparent;
+    top: 0;
+    left: 0;
+    -webkit-animation: effect-1-1 4s infinite linear;
+    -moz-animation: effect-1-1 4s infinite linear;
+    -ms-animation: effect-1-1 4s infinite linear;
+    -o-animation: effect-1-1 4s infinite linear;
+    animation: effect-1-1 4s infinite linear;
+}
+
+.loading-effect-small span {
+    border: 1px solid;
+}
+
+.loading-effect-tabloader span {
+    border: 1px solid;
+}
+
+.loading-effect-1 span:nth-child(2), .loading-effect-small span:nth-child(2), .loading-effect-tabloader span:nth-child(2) {
+    width: 75%;
+    height: 75%;
+    border-color: #01c2a7;
+    border-right-color: transparent;
+    top: 12.5%;
+    left: 12.5%;
+    -webkit-animation: effect-1-2 3s infinite linear;
+    -moz-animation: effect-1-2 3s infinite linear;
+    -ms-animation: effect-1-2 3s infinite linear;
+    -o-animation: effect-1-2 3s infinite linear;
+    animation: effect-1-2 3s infinite linear;
+}
+
+.loading-effect-1 span:last-child, .loading-effect-small span:last-child, .loading-effect-tabloader span:last-child {
+    width: 50%;
+    height: 50%;
+    border-color: #00b0d5;
+    border-bottom-color: transparent;
+    top: 25%;
+    left: 25%;
+    -webkit-animation: effect-1-1 4s infinite linear;
+    -moz-animation: effect-1-1 4s infinite linear;
+    -ms-animation: effect-1-1 4s infinite linear;
+    -o-animation: effect-1-1 4s infinite linear;
+    animation: effect-1-1 4s infinite linear;
+}
+
+@-webkit-keyframes effect-1-1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes effect-1-1 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-webkit-keyframes effect-1-2 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+@keyframes effect-1-2 {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); }
+}
+/* spinner end */
+
+/* Defect 1593555 */
+.ui-listbox {
+    overflow: auto;
+}
+
+.superAligned {
+    vertical-align: super;
+}
+
+.taskNameText {
+    white-space: pre-wrap;
+}
+
+.ui-fieldset a {
+    text-decoration: none;
+}
+
+.notSelectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.ui-radiobutton .ui-state-default {
+    border: 1px solid #777;
+}
+
+.ui-chkbox .ui-chkbox-box.ui-state-default.ui-state-disabled,
+.ui-inputtext.ui-state-default:disabled,
+.ui-dropdown.ui-state-disabled,
+.ui-radiobutton .ui-radiobutton-box.ui-state-default.ui-state-disabled  {
+    /* background-color: #ddd; */
+    border-color: #aaa;
+    filter: contrast(50%);
+}
+
+.ui-table .ui-table-tbody > tr > td {
+    overflow-wrap: break-word;
+}
+.ui-table.ui-table-resizable .ui-table-thead>tr>th {
+    overflow: visible;
+}
+.ui-table.ui-table-resizable>.ui-table-wrapper {
+    overflow-x: visible;
+}
+
+/* Primeng bug that in FF auto width is smaller than it should to be */
+ul.ui-multiselect-items li.ui-multiselect-item {
+    padding-right: 1.5em;
+}
+
+/* Little triangle on panel */
+html .ui-overlaypanel {
+    margin-top: 0px;
+}
+html .userOverlay.ui-overlaypanel {
+    margin-top: 10px;
+}
+html .ui-overlaypanel:after, html .ui-overlaypanel:before {
+    display: none;
+}
+html .userOverlay.ui-overlaypanel:after, html .userOverlay.ui-overlaypanel:before {
+    left: auto;
+    right: .5em;
+    display: block;
+}
+
+
+.menuComp a[class~="ui-menuitem-link"]:after,
+.userOverlay a[class~="userDropdown-item"]:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	background-color: #2399e5;
+	content: "";
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.menuComp a.ui-menuitem-link.active:after,
+.menuComp a[class~="ui-menuitem-link"]:hover:after,
+.userOverlay a[class~="userDropdown-item"]:hover:after {
+  	width: 100%;
+}
+body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link {
+    height: 2.4em;
+}
+
+.confirmDialog .ui-dialog-content {
+    white-space: pre-wrap;
+}
+
+.ui-toast {
+    white-space: pre-wrap;
+    word-break: break-word;
+}

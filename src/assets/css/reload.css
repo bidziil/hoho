@@ -1,0 +1,49 @@
+.reloadMessage {
+    display: none;
+    position: absolute;
+    left: 50%;
+    font-family: sans-serif;
+}
+.reloadMessageContent {
+    position: relative;
+    left: -50%;
+    padding: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #FDD600;
+}
+.reloadMessage .reloadMainMessage {
+    font-size: 1.2em;
+}
+.reloadMessage .reloadSideMessage {
+    text-align: center;
+}
+
+.reloadLink {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.reloadLink:hover {
+    color: darkblue;
+}
+
+/* ANIMATION */
+.reloadMessage .reloadMessageContent {
+    animation-delay: 31s;
+    animation: colorchange 5s;
+    -webkit-animation: colorchange 5s; /* Chrome and Safari */
+}
+@keyframes colorchange {
+    0%   {background: white;}
+    33%  {background: #FDD600;}
+    66%  {background: white;}
+    100% {background: #FDD600;}
+}
+/* Safari and Chrome - necessary duplicate */
+@-webkit-keyframes colorchange {
+    0%   {background: white;}
+    33%  {background: #FDD600;}
+    66%  {background: white;}
+    100% {background: #FDD600;}
+}

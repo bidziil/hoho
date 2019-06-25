@@ -1,0 +1,13 @@
+<p class="menuComp">
+  <p-menubar [model]="items" styleClass="mainMenu">
+  </p-menubar>
+
+  <p-toolbar class="{{responsive ? 'responsive' : ''}} hamburgerMenu">
+    <button class="hamburger hamburger--slider" (click)="toggleMenu()" type="button" #hamburger>
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+  </p-toolbar>
+  <p-panelMenu [style.display]="responsive ? 'block' : 'none'" [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+</p>
