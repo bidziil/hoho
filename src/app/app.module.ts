@@ -22,16 +22,24 @@ import { ToastModule }                                          from 'primeng/to
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { MenuComponent } from './menu/menu.component';
 import { IntroductionComponent } from './view/introduction.component';
 import { ReferenceComponent } from './view/reference.component';
-import { MenuComponent } from './menu/menu.component';
+import { PicturesComponent } from './view/pictures.component';
+import { ContactComponent } from './view/contact.component';
+import { ProfilesComponent } from './view/profiles.component';
+import { DownloadsComponent } from './view/downloads.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
     ReferenceComponent,
-    MenuComponent
+    MenuComponent,
+    PicturesComponent,
+    ContactComponent,
+    ProfilesComponent,
+    DownloadsComponent
   ],
   imports: [
     BrowserModule,
