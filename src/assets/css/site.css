@@ -6,6 +6,14 @@
 html {
     overflow-y: scroll;
 }
+body {
+    background-color: #f4f4f7;
+}
+article {
+    position: relative;
+    z-index: 1;
+    margin: 1em; 
+}
 
 html body .ui-widget,
 html body .ui-widget .ui-dropdown-label {
@@ -58,6 +66,8 @@ body button.ui-button.slimButton span.ui-button-text {
     padding: 6px;
     font-size: var(--fontSize);
     background-color: #F7685E;
+    z-index: 1;
+    position: relative;
 }
 
 .one {
@@ -467,27 +477,6 @@ html .userOverlay.ui-overlaypanel:after, html .userOverlay.ui-overlaypanel:befor
     display: block;
 }
 
-
-.menuComp a[class~="ui-menuitem-link"]:after,
-.userOverlay a[class~="userDropdown-item"]:after {
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: -3px;
-	width: 0;
-	height: 3px;
-	background-color: #2399e5;
-	content: "";
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-}
-.menuComp a.ui-menuitem-link.active:after,
-.menuComp a[class~="ui-menuitem-link"]:hover:after,
-.userOverlay a[class~="userDropdown-item"]:hover:after {
-  	width: 100%;
-}
 body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link {
     height: 2.4em;
 }
@@ -499,4 +488,13 @@ body .ui-menubar .ui-menubar-root-list > .ui-menuitem > .ui-menuitem-link {
 .ui-toast {
     white-space: pre-wrap;
     word-break: break-word;
+}
+
+button[disabled] {
+    cursor: default;
+}
+
+i.ui-autocomplete-loader,
+i.ui-datatable-loading-content {
+    display: none;
 }

@@ -39,11 +39,3 @@ html, body {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-article {
-	margin: 10px;
-}
-
-body {
-	background-color: #FFFFFF;
-}
