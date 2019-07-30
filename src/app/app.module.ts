@@ -6,7 +6,7 @@ import {
   ConfirmationService, MessageService,
   AutoCompleteModule, RadioButtonModule, AccordionModule, InputTextModule,
   DataGridModule, DataScrollerModule, DialogModule, SharedModule,
-  SliderModule, ChartModule, SelectButtonModule, MessageModule,
+  SliderModule, SelectButtonModule, MessageModule,
   FieldsetModule, TreeModule, PaginatorModule, CardModule, MessagesModule,
   InplaceModule, SplitButtonModule, ToggleButtonModule, ListboxModule,
   DataListModule, FileUploadModule, PickListModule, ProgressBarModule,
@@ -38,7 +38,7 @@ import { MenuComponent } from './menu/menu.component';
     // primeng modules:
     AutoCompleteModule, RadioButtonModule, AccordionModule, InputTextModule,
     DataGridModule, DataScrollerModule, DialogModule, SharedModule,
-    SliderModule, ChartModule, SelectButtonModule, MessageModule,
+    SliderModule, SelectButtonModule, MessageModule,
     FieldsetModule, TreeModule, PaginatorModule, CardModule, MessagesModule,
     InplaceModule, SplitButtonModule, ToggleButtonModule, ListboxModule,
     DataListModule, FileUploadModule, PickListModule, ProgressBarModule,

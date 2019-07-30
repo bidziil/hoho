@@ -14,9 +14,9 @@ export class MenuComponent implements OnInit {
   responsive: boolean = false;
   items: MenuItem[];
 
-  @ViewChild(OverlayPanel)
+  @ViewChild('userOverlay', { static: false })
   userOverlay: OverlayPanel;
-  @ViewChild('hamburger')
+  @ViewChild('hamburger', { static: true })
   hamburger: ElementRef;
 
   constructor() { }
