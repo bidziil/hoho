@@ -94,7 +94,7 @@
               { "glob": "**/*", "input": "src/assets", "output": "/assets" }
             ],
             "styles": [
-              "src/styles.css"
+              "./src/assets/css/site.css"
             ],
             "scripts": []
           }
