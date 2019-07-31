@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import {
   ConfirmationService, MessageService,
@@ -20,6 +19,7 @@ import { TreeTableModule }                                      from 'primeng/tr
 import { ToastModule }                                          from 'primeng/toast';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AppErrorHandlerModule, RollbarServiceModule } from './error/app.error.handler';
 import { AppComponent } from './app.component';
 
 import { MenuComponent } from './menu/menu.component';
@@ -55,7 +55,7 @@ import { DownloadsComponent } from './view/downloads.component';
     TabViewModule, ToolbarModule, MultiSelectModule, ButtonModule, CalendarModule,
     ConfirmDialogModule, TableModule, TreeTableModule, ToastModule,
     InputTextareaModule, GalleriaModule,
-    AppRoutingModule
+    AppRoutingModule, AppErrorHandlerModule, RollbarServiceModule
   ],
   providers: [
     ConfirmationService

@@ -11,6 +11,11 @@ import { environment } from 'src/environments/environment';
 
 const routes: Routes = [
   {
+    path: '',
+    component: IntroductionComponent,
+    data: { title: 'Introduction' }
+  },
+  {
     path: 'introduction',
     component: IntroductionComponent,
     data: { title: 'Introduction' }
@@ -49,7 +54,7 @@ const routes: Routes = [
 
 @NgModule({
   // imports: [RouterModule.forRoot(routes)],
-  imports: [RouterModule.forRoot(routes, {useHash: false, enableTracing: !environment.production})],
+  imports: [RouterModule.forRoot(routes, {useHash: false, enableTracing: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
