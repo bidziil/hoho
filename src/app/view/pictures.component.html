@@ -1,1 +1,8 @@
-<p>pictures works!</p>
+
+<p #pictures class="pictures">
+    <!-- panelWidth="1024" panelHeight="768" -->
+    <p-galleria [images]="images"
+      [effectDuration]=2000 [showCaption]="false" [showFilmstrip]="false"
+      (onImageClicked)="onImageClicked($event)"
+      (onImageChange)="onImageChange($event)"></p-galleria>
+</p>

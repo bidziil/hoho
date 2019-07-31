@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-reference',
@@ -8,9 +9,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ReferenceComponent implements OnInit {
 
-  constructor() { }
+  constructor( public route: ActivatedRoute,
+               public router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.info('ngOnInit', this, this.route.snapshot);
   }
 
 }

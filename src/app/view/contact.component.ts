@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -9,9 +10,11 @@ import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor( public route: ActivatedRoute,
+               public router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.info('ngOnInit', this, this.route.snapshot);
   }
 
 }
